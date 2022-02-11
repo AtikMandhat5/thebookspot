@@ -1,25 +1,19 @@
-import logo from './logo.svg';
 import './App.css';
+import Signin from './layout/authentication/signin';
+import NavHeader from './layout/dashboard/components/navheader'
+import Footer from './layout/dashboard/components/footer'
+import Books from './layout/books';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <NavHeader/>
+        <Signin/>
+        <Books/>
+        <Footer/>
       </header>
     </div>
   );
 }
-
 export default App;
