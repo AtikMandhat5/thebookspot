@@ -31,7 +31,7 @@ export default function Footer(props) {
   const { description, title } = props;
 
   return (
-    <footer className={classes.footer}>
+    <footer className={classes.footer} mt={12}>
       <Container maxWidth="lg">
         <Typography variant="h6" align="center" gutterBottom>
           {title}
@@ -44,7 +44,6 @@ export default function Footer(props) {
     </footer>
   );
 }
-
 Footer.propTypes = {
   description: PropTypes.string,
   title: PropTypes.string,
